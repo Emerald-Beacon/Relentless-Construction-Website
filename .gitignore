@@ -9,3 +9,6 @@ wp_extracted/
 .idea/
 .vscode/
 *.swp
+
+# Local Netlify folder
+.netlify
