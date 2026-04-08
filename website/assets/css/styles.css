@@ -5,21 +5,21 @@
 
 /* CSS Variables */
 :root {
-    --primary-color: #135941;
-    --primary-light: #1a7a55;
-    --primary-dark: #0e4532;
-    --dark-bg: #0d0d0d;
-    --dark-bg-secondary: #1a1a1a;
-    --dark-bg-card: #141414;
+    --primary-color: #17a267;
+    --primary-light: #1fc07a;
+    --primary-dark: #135941;
+    --dark-bg: #1a1a1a;
+    --dark-bg-secondary: #242424;
+    --dark-bg-card: #1e1e1e;
     --white: #ffffff;
-    --text-light: rgba(255, 255, 255, 0.7);
-    --text-muted: rgba(255, 255, 255, 0.5);
-    --border-dark: rgba(255, 255, 255, 0.1);
+    --text-light: rgba(255, 255, 255, 0.85);
+    --text-muted: rgba(255, 255, 255, 0.65);
+    --border-dark: rgba(255, 255, 255, 0.15);
     --font-primary: 'Bricolage Grotesque', sans-serif;
     --font-secondary: 'Host Grotesk', sans-serif;
     --transition: all 0.3s ease;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.4);
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
 
 /* Reset & Base */
@@ -138,7 +138,7 @@ ul {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(13, 13, 13, 0.95);
+    background-color: rgba(26, 26, 26, 0.98);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-dark);
 }
@@ -260,7 +260,7 @@ ul {
 }
 
 .nav-list .dropdown-menu a:hover {
-    background-color: rgba(19, 89, 65, 0.2);
+    background-color: rgba(23, 162, 103, 0.2);
 }
 
 .header-cta {
@@ -317,9 +317,9 @@ ul {
     inset: 0;
     background: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(0, 0, 0, 0.7) 60%,
-        rgba(0, 0, 0, 0.5) 100%
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.55) 60%,
+        rgba(0, 0, 0, 0.35) 100%
     );
 }
 
@@ -337,7 +337,7 @@ ul {
 
 .hero-badge {
     display: inline-block;
-    background-color: rgba(19, 89, 65, 0.3);
+    background-color: rgba(23, 162, 103, 0.3);
     border: 1px solid var(--primary-color);
     padding: 8px 16px;
     border-radius: 0;
@@ -575,7 +575,7 @@ ul {
 
 .section-badge {
     display: inline-block;
-    background-color: rgba(19, 89, 65, 0.2);
+    background-color: rgba(23, 162, 103, 0.2);
     border: 1px solid var(--primary-color);
     padding: 6px 16px;
     border-radius: 0;
@@ -1249,9 +1249,9 @@ ul {
     inset: 0;
     background: linear-gradient(
         to right,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(0, 0, 0, 0.7) 60%,
-        rgba(0, 0, 0, 0.5) 100%
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.55) 60%,
+        rgba(0, 0, 0, 0.35) 100%
     );
 }
 
@@ -1418,7 +1418,7 @@ ul {
     width: 80px;
     height: 80px;
     margin: 0 auto 25px;
-    background-color: rgba(19, 89, 65, 0.2);
+    background-color: rgba(23, 162, 103, 0.2);
     border: 2px solid var(--primary-color);
     border-radius: 0;
     display: flex;
@@ -1693,7 +1693,7 @@ ul {
 .build-card-icon {
     width: 60px;
     height: 60px;
-    background-color: rgba(19, 89, 65, 0.2);
+    background-color: rgba(23, 162, 103, 0.2);
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -1858,7 +1858,7 @@ ul {
     width: 80px;
     height: 80px;
     margin: 0 auto 20px;
-    background-color: rgba(19, 89, 65, 0.15);
+    background-color: rgba(23, 162, 103, 0.15);
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -2137,7 +2137,7 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: rgba(19, 89, 65, 0.3);
+    background-color: rgba(23, 162, 103, 0.3);
     border: 1px solid var(--primary-color);
     padding: 12px 24px;
     margin-bottom: 30px;
@@ -2309,7 +2309,7 @@ ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.04;
+    opacity: 0.07;
     pointer-events: none;
     z-index: 0;
 }
@@ -2342,11 +2342,11 @@ ul {
 
 /* Slightly higher opacity variants */
 .section-with-bg.bg-opacity-6::before {
-    opacity: 0.06;
+    opacity: 0.09;
 }
 
 .section-with-bg.bg-opacity-8::before {
-    opacity: 0.08;
+    opacity: 0.12;
 }
 
 /* Position variants */
@@ -2360,7 +2360,7 @@ ul {
 
 /* Footer with subtle background */
 .footer.section-with-bg::before {
-    opacity: 0.03;
+    opacity: 0.05;
 }
 
 /* ============================================
@@ -2394,7 +2394,7 @@ ul {
 }
 
 .filter-btn:hover {
-    background: rgba(19, 89, 65, 0.2);
+    background: rgba(23, 162, 103, 0.2);
     border-color: var(--primary-color);
     color: var(--white);
 }
@@ -2438,7 +2438,7 @@ ul {
     left: 0;
     right: 0;
     padding: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -2469,7 +2469,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(0, 0, 0, 0.92);
     z-index: 10000;
     display: none;
     align-items: center;
