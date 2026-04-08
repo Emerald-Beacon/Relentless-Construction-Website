@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# WordPress backup (large files, reference only)
+wp_extracted/
+*.wpress
+
+# IDE
+.idea/
+.vscode/
+*.swp

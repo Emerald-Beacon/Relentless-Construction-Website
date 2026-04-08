@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardscapes - Relentless Construction | Utah & Arizona</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Host+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="top-bar-left">
+                        <a href="tel:801-923-4634"><i class="fas fa-phone"></i> 801-923-4634</a>
+                        <a href="mailto:info@relentlessconstruction.io"><i class="fas fa-envelope"></i> info@relentlessconstruction.io</a>
+                        <span><i class="fas fa-clock"></i> Mon-Sat 8AM-6PM</span>
+                    </div>
+                    <div class="top-bar-right">
+                        <span>Follow Us:</span>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/full-logo.png" alt="Relentless Construction">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="windows.html">Window Installation</a></li>
+                                    <li><a href="roofing.html">Roofing</a></li>
+                                    <li><a href="basement.html">Basement Finishing</a></li>
+                                    <li><a href="hardscapes.html">Hardscapes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-cta">
+                        <a href="tel:801-923-4634" class="header-phone">
+                            <i class="fas fa-phone"></i>
+                            <span>Ready, Contact Now</span>
+                        </a>
+                        <a href="#contact" class="btn btn-primary">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero" style="background-image: url('assets/images/gallery-3.webp');">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-hero-text">
+                    <span class="hero-badge">Utah & Arizona's Trusted Construction Experts</span>
+                    <h1>OUTDOOR LIVING <span class="highlight">DESIGNED</span> FOR YOU</h1>
+                    <p>From stunning patios to functional retaining walls, our hardscape services transform your outdoor space into a beautiful extension of your home.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                        <a href="tel:801-923-4634" class="btn btn-secondary">Call Now</a>
+                        <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="number">50+</div>
+                            <div class="label">Years Experience</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">500+</div>
+                            <div class="label">Projects Completed</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">24HR</div>
+                            <div class="label">Response Time</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">4.9</div>
+                            <div class="label">Google Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-form" id="contact">
+                    <h3>Get Your Free Estimate</h3>
+                    <p class="form-subtitle">No obligation. Response within 24 hours.</p>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastname" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="patio">Patio</option>
+                                <option value="retaining-wall">Retaining Wall</option>
+                                <option value="walkway">Walkway</option>
+                                <option value="outdoor-kitchen">Outdoor Kitchen</option>
+                                <option value="fire-feature">Fire Pit/Fireplace</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Request Free Estimate</button>
+                        <p class="form-disclaimer">I understand & consent to receive calls/text from Relentless – No Obligation</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews-content">
+                <div class="reviews-text">
+                    <h2>RELENTLESS CONSTRUCTION<br>CUSTOMER REVIEWS</h2>
+                </div>
+                <div class="reviews-badges">
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">4.9/5</div>
+                            <div class="source">Google Reviews</div>
+                        </div>
+                    </div>
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fab fa-yelp"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">4.8/5</div>
+                            <div class="source">Yelp Reviews</div>
+                        </div>
+                    </div>
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">5.0/5</div>
+                            <div class="source">HomeAdvisor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Build Section -->
+    <section class="what-we-build-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2>WHAT WE BUILD</h2>
+                <p>At Relentless, we specialize in creating outdoor spaces that blend beauty, function, and durability.</p>
+            </div>
+            <div class="build-grid">
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3>Patios & Decks</h3>
+                    <p>Custom-designed patios and decks using pavers, natural stone, concrete, or composite materials to create the perfect outdoor gathering space.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Walkways & Paths</h3>
+                    <p>Elegant walkways and garden paths that enhance accessibility and add visual interest to your landscape design.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Retaining Walls</h3>
+                    <p>Functional and attractive retaining walls that manage slopes, prevent erosion, and create usable outdoor spaces.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Outdoor Kitchens</h3>
+                    <p>Complete outdoor cooking spaces with built-in grills, countertops, storage, and seating areas for entertaining.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Fire Pits & Fireplaces</h3>
+                    <p>Custom fire features that extend your outdoor season and create a warm gathering spot for family and friends.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Water Features</h3>
+                    <p>Fountains, ponds, and waterfalls that add tranquility and visual appeal to your outdoor living space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Built For Living Section -->
+    <section class="built-for-section">
+        <div class="container">
+            <div class="built-for-content">
+                <div class="built-for-text">
+                    <span class="section-badge">Why Hardscapes</span>
+                    <h2>BUILT FOR <span class="highlight">LIVING</span></h2>
+                    <p>At the heart of everything we do is the desire to help you live life to the fullest, surrounded by the people you love.</p>
+                    <p>Our hardscapes are designed with your lifestyle in mind — low maintenance, high durability, and timeless beauty that stands up to Utah's snow and Arizona's sun.</p>
+                    <div class="built-for-features">
+                        <div class="built-for-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Fully Licensed</span>
+                        </div>
+                        <div class="built-for-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Fully Insured</span>
+                        </div>
+                        <div class="built-for-feature">
+                            <i class="fas fa-check"></i>
+                            <span>5-Star Rated</span>
+                        </div>
+                        <div class="built-for-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Same Day Quotes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="redefining-icons">
+                    <div class="icon-card">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Fully Licensed</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Fully Insured</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-star"></i>
+                        <span>5-Star Rated</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-bolt"></i>
+                        <span>Same-Day Quotes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Section -->
+    <section class="roi-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>ROI FOR YOUR OUTDOOR SPACE</h2>
+            </div>
+            <div class="roi-grid">
+                <div class="roi-card">
+                    <h4>Patio</h4>
+                    <div class="stat">80%+</div>
+                    <p>Average ROI on patio installation</p>
+                </div>
+                <div class="roi-card">
+                    <h4>Outdoor Kitchen</h4>
+                    <div class="stat">100-200%</div>
+                    <p>Average ROI on outdoor kitchens</p>
+                </div>
+                <div class="roi-card">
+                    <h4>Fire Feature</h4>
+                    <div class="stat">78%</div>
+                    <p>Average ROI on fire pit/fireplace</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>FROM DESIGN TO COMPLETION</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-ruler-combined"></i>
+                    </div>
+                    <h3>Design Consultation</h3>
+                    <p>We meet with you to understand your vision, assess your space, and discuss design options.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Custom Proposal</h3>
+                    <p>Receive a detailed proposal with design renderings, materials, and transparent pricing.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Expert Installation</h3>
+                    <p>Our skilled crews build your project with precision, keeping your property clean throughout.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Final Walkthrough</h3>
+                    <p>We review the completed project with you to ensure everything meets your expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="areas-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Service Areas</span>
+                <h2>PROUDLY SERVING UTAH & ARIZONA</h2>
+            </div>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> ARIZONA</h3>
+                    <p class="area-subtitle">Phoenix Metro, Scottsdale, and Surrounding Areas</p>
+                    <ul>
+                        <li>Phoenix</li>
+                        <li>Scottsdale</li>
+                        <li>Mesa</li>
+                        <li>Tempe</li>
+                        <li>Gilbert</li>
+                        <li>Chandler</li>
+                        <li>Glendale</li>
+                        <li>Peoria</li>
+                        <li>Surprise</li>
+                        <li>Goodyear</li>
+                        <li>Buckeye</li>
+                        <li>Avondale</li>
+                    </ul>
+                </div>
+                <div class="area-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> UTAH</h3>
+                    <p class="area-subtitle">Salt Lake City, Utah County, and Surrounding Areas</p>
+                    <ul>
+                        <li>Salt Lake City</li>
+                        <li>Provo</li>
+                        <li>Ogden</li>
+                        <li>Sandy</li>
+                        <li>West Valley City</li>
+                        <li>Orem</li>
+                        <li>West Jordan</li>
+                        <li>Layton</li>
+                        <li>South Jordan</li>
+                        <li>Lehi</li>
+                        <li>Draper</li>
+                        <li>St. George</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>WHAT OUR CLIENTS SAY</h2>
+            </div>
+            <div class="google-reviews-widget">
+                <div class="google-reviews-header">
+                    <div class="google-logo">
+                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style="height: 25px;">
+                        <span style="color: #333; font-weight: 600;">Excellent</span>
+                        <span class="stars" style="color: #ffc107;">★★★★★</span>
+                        <span style="color: #666;">5.0 · 32 reviews</span>
+                    </div>
+                    <a href="#" class="write-review-btn">Write a review</a>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=Ann+Fader&background=135941&color=fff" alt="Ann Fader" class="review-avatar">
+                            <div class="review-author">
+                                <h4>Ann Fader</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>I trust efficient services needed. So easy to do business with!!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=David+Urso&background=135941&color=fff" alt="David Urso" class="review-avatar">
+                            <div class="review-author">
+                                <h4>David Urso</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>Relentless Construction did an excellent job replacing our windows. Teigue and his associates went out of their way to ensure I was informed every step of th...</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=Donna+Bradley&background=135941&color=fff" alt="Donna Bradley" class="review-avatar">
+                            <div class="review-author">
+                                <h4>Donna Bradley</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>Installation went very well. Two man crew were personable and cleaned up everything...</p>
+                    </div>
+                </div>
+                <div class="verified-badge">
+                    <a href="#">Verified by TrustIndex <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2>HARDSCAPE FAQS</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What materials do you use for patios?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We work with a variety of materials including pavers, natural stone, stamped concrete, and flagstone. We'll help you choose the best option for your style and budget.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does a typical hardscape project take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on scope. A simple patio may take 3-5 days, while larger projects with outdoor kitchens and fire features can take 2-4 weeks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do hardscapes require maintenance?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Hardscapes are low maintenance compared to landscaping. Occasional cleaning, joint sand replenishment, and sealing (for some materials) will keep your hardscape looking great.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can you match my existing landscape design?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We design our hardscapes to complement your existing landscape, architecture, and personal style. We'll work with you to create a cohesive outdoor space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Outdoor Space?</h2>
+                <p>Get your free design consultation today.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Get Free Estimate</a>
+                    <a href="tel:801-923-4634" class="btn btn-secondary btn-large">Call (801) 923-4634</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Call Us</h4>
+                    <a href="tel:801-923-4634">801-923-4634</a>
+                </div>
+                <div class="footer-info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Hours</h4>
+                    <p>Monday-Friday: 8AM - 6PM<br>Saturday: By Appointment</p>
+                </div>
+                <div class="footer-info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Service Areas</h4>
+                    <p>Utah & Arizona<br>Multiple Locations</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Relentless Construction. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

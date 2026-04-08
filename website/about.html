@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Relentless Construction | Utah & Arizona</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Host+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="top-bar-left">
+                        <a href="tel:801-923-4634"><i class="fas fa-phone"></i> 801-923-4634</a>
+                        <a href="mailto:info@relentlessconstruction.io"><i class="fas fa-envelope"></i> info@relentlessconstruction.io</a>
+                        <span><i class="fas fa-clock"></i> Mon-Sat 8AM-6PM</span>
+                    </div>
+                    <div class="top-bar-right">
+                        <span>Follow Us:</span>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/full-logo.png" alt="Relentless Construction">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="windows.html">Window Installation</a></li>
+                                    <li><a href="roofing.html">Roofing</a></li>
+                                    <li><a href="basement.html">Basement Finishing</a></li>
+                                    <li><a href="hardscapes.html">Hardscapes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-cta">
+                        <a href="tel:801-923-4634" class="header-phone">
+                            <i class="fas fa-phone"></i>
+                            <span>Ready, Contact Now</span>
+                        </a>
+                        <a href="#contact" class="btn btn-primary">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero" style="background-image: url('assets/images/hero-bg.webp');">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-hero-text">
+                    <span class="hero-badge">Utah & Arizona's Trusted Construction Experts</span>
+                    <h1>MEET THE <span class="highlight">TEAM</span></h1>
+                    <p>A relentless commitment to quality. A passion for building homes that stand the test of time. Learn about the people behind the work.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                        <a href="tel:801-923-4634" class="btn btn-secondary">Call Now</a>
+                        <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="number">50+</div>
+                            <div class="label">Years Experience</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">500+</div>
+                            <div class="label">Projects Completed</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">24HR</div>
+                            <div class="label">Response Time</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">4.9</div>
+                            <div class="label">Google Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-form" id="contact">
+                    <h3>Get Your Free Estimate</h3>
+                    <p class="form-subtitle">No obligation. Response within 24 hours.</p>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastname" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="roofing">Roofing</option>
+                                <option value="basement">Basement Finishing</option>
+                                <option value="hardscapes">Hardscapes</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Request Free Estimate</button>
+                        <p class="form-disclaimer">I understand & consent to receive calls/text from Relentless – No Obligation</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews-content">
+                <div class="reviews-text">
+                    <h2>RELENTLESS CONSTRUCTION<br>CUSTOMER REVIEWS</h2>
+                </div>
+                <div class="reviews-badges">
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">4.9/5</div>
+                            <div class="source">Google Reviews</div>
+                        </div>
+                    </div>
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fab fa-yelp"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">4.8/5</div>
+                            <div class="source">Yelp Reviews</div>
+                        </div>
+                    </div>
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">5.0/5</div>
+                            <div class="source">HomeAdvisor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Built to Last -->
+    <section class="services-built-section">
+        <div class="container">
+            <div class="services-built-content">
+                <div class="services-built-image">
+                    <img src="assets/images/gallery-1.webp" alt="Construction work">
+                </div>
+                <div class="services-built-text">
+                    <span class="section-badge">Our Story</span>
+                    <h2>SERVICES BUILT TO LAST</h2>
+                    <p>Relentless Construction started with a simple belief: homeowners deserve contractors who stand by their word, do what they promise, and stand behind their work. Period.</p>
+                    <p>What began as a small roofing operation has grown into a full-service construction company serving homeowners across Utah and Arizona. We've never lost the challenger spirit or work ethic that got us here.</p>
+                    <p>We're not the cheapest option out there — and we never will be. What we are is reliable, skilled, and absolutely relentless when it comes to quality. That's why 3 out of 4 homeowners have trusted us with their biggest investments, and why we maintain a 5-Star rating across thousands of reviews.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Values</span>
+                <h2>CORE VALUES</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Quality</h3>
+                    <p>We never cut corners. Every project is completed to the highest standards using premium materials and expert craftsmanship.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Integrity</h3>
+                    <p>Honest communication and transparent pricing are at the heart of everything we do. No surprises, no hidden fees.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Relentless Drive</h3>
+                    <p>We approach every project with determination and dedication. Challenges don't stop us—they motivate us to do better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Leadership</span>
+                <h2>OUR LEADERSHIP TEAM</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://ui-avatars.com/api/?name=Teague+Dennis&background=135941&color=fff&size=300" alt="Teague Dennis">
+                    <div class="team-card-content">
+                        <h4>Teague Dennis</h4>
+                        <p>CEO / Founder</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://ui-avatars.com/api/?name=Josh+Anderson&background=135941&color=fff&size=300" alt="Josh Anderson">
+                    <div class="team-card-content">
+                        <h4>Josh Anderson</h4>
+                        <p>COO</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://ui-avatars.com/api/?name=Taylor+Hughes&background=135941&color=fff&size=300" alt="Taylor Hughes">
+                    <div class="team-card-content">
+                        <h4>Taylor Hughes</h4>
+                        <p>Head of Sales</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://ui-avatars.com/api/?name=Katie+Turner&background=135941&color=fff&size=300" alt="Katie Turner">
+                    <div class="team-card-content">
+                        <h4>Katie Turner</h4>
+                        <p>Project Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-row-small">
+                <div class="team-card">
+                    <img src="https://ui-avatars.com/api/?name=Ryan+Smith&background=135941&color=fff&size=300" alt="Ryan Smith">
+                    <div class="team-card-content">
+                        <h4>Ryan Smith</h4>
+                        <p>Roofing Lead</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://ui-avatars.com/api/?name=Maria+Gonzalez&background=135941&color=fff&size=300" alt="Maria Gonzalez">
+                    <div class="team-card-content">
+                        <h4>Maria Gonzalez</h4>
+                        <p>Customer Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section class="credentials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Credentials</span>
+                <h2>WHY TRUST US</h2>
+            </div>
+            <div class="credentials-grid">
+                <div class="credential-card">
+                    <div class="credential-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h4>Fully Licensed</h4>
+                    <p>Licensed in Utah and Arizona with all required contractor credentials.</p>
+                </div>
+                <div class="credential-card">
+                    <div class="credential-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Insured</h4>
+                    <p>Comprehensive liability and workers' compensation insurance for your protection.</p>
+                </div>
+                <div class="credential-card">
+                    <div class="credential-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h4>Bonded</h4>
+                    <p>Bonded contractor providing additional security for your project investment.</p>
+                </div>
+                <div class="credential-card">
+                    <div class="credential-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h4>Certified</h4>
+                    <p>Manufacturer-certified installers for premium roofing and construction products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="areas-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Service Areas</span>
+                <h2>PROUDLY SERVING UTAH & ARIZONA</h2>
+            </div>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> ARIZONA</h3>
+                    <p class="area-subtitle">Phoenix Metro, Scottsdale, and Surrounding Areas</p>
+                    <ul>
+                        <li>Phoenix</li>
+                        <li>Scottsdale</li>
+                        <li>Mesa</li>
+                        <li>Tempe</li>
+                        <li>Gilbert</li>
+                        <li>Chandler</li>
+                        <li>Glendale</li>
+                        <li>Peoria</li>
+                        <li>Surprise</li>
+                        <li>Goodyear</li>
+                        <li>Buckeye</li>
+                        <li>Avondale</li>
+                    </ul>
+                </div>
+                <div class="area-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> UTAH</h3>
+                    <p class="area-subtitle">Salt Lake City, Utah County, and Surrounding Areas</p>
+                    <ul>
+                        <li>Salt Lake City</li>
+                        <li>Provo</li>
+                        <li>Ogden</li>
+                        <li>Sandy</li>
+                        <li>West Valley City</li>
+                        <li>Orem</li>
+                        <li>West Jordan</li>
+                        <li>Layton</li>
+                        <li>South Jordan</li>
+                        <li>Lehi</li>
+                        <li>Draper</li>
+                        <li>St. George</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>WHAT OUR CLIENTS SAY</h2>
+            </div>
+            <div class="google-reviews-widget">
+                <div class="google-reviews-header">
+                    <div class="google-logo">
+                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style="height: 25px;">
+                        <span style="color: #333; font-weight: 600;">Excellent</span>
+                        <span class="stars" style="color: #ffc107;">★★★★★</span>
+                        <span style="color: #666;">5.0 · 32 reviews</span>
+                    </div>
+                    <a href="#" class="write-review-btn">Write a review</a>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=Ann+Fader&background=135941&color=fff" alt="Ann Fader" class="review-avatar">
+                            <div class="review-author">
+                                <h4>Ann Fader</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>I trust efficient services needed. So easy to do business with!!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=David+Urso&background=135941&color=fff" alt="David Urso" class="review-avatar">
+                            <div class="review-author">
+                                <h4>David Urso</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>Relentless Construction did an excellent job replacing our windows. Teigue and his associates went out of their way to ensure I was informed every step of th...</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=Donna+Bradley&background=135941&color=fff" alt="Donna Bradley" class="review-avatar">
+                            <div class="review-author">
+                                <h4>Donna Bradley</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>Installation went very well. Two man crew were personable and cleaned up everything...</p>
+                    </div>
+                </div>
+                <div class="verified-badge">
+                    <a href="#">Verified by TrustIndex <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Work With Us?</h2>
+                <p>Get your free, no-obligation estimate today.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Get Free Estimate</a>
+                    <a href="tel:801-923-4634" class="btn btn-secondary btn-large">Call (801) 923-4634</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Call Us</h4>
+                    <a href="tel:801-923-4634">801-923-4634</a>
+                </div>
+                <div class="footer-info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Hours</h4>
+                    <p>Monday-Friday: 8AM - 6PM<br>Saturday: By Appointment</p>
+                </div>
+                <div class="footer-info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Service Areas</h4>
+                    <p>Utah & Arizona<br>Multiple Locations</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Relentless Construction. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

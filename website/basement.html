@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basement Finishing - Relentless Construction | Utah & Arizona</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Host+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="top-bar-left">
+                        <a href="tel:801-923-4634"><i class="fas fa-phone"></i> 801-923-4634</a>
+                        <a href="mailto:info@relentlessconstruction.io"><i class="fas fa-envelope"></i> info@relentlessconstruction.io</a>
+                        <span><i class="fas fa-clock"></i> Mon-Sat 8AM-6PM</span>
+                    </div>
+                    <div class="top-bar-right">
+                        <span>Follow Us:</span>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/full-logo.png" alt="Relentless Construction">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="windows.html">Window Installation</a></li>
+                                    <li><a href="roofing.html">Roofing</a></li>
+                                    <li><a href="basement.html">Basement Finishing</a></li>
+                                    <li><a href="hardscapes.html">Hardscapes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-cta">
+                        <a href="tel:801-923-4634" class="header-phone">
+                            <i class="fas fa-phone"></i>
+                            <span>Ready, Contact Now</span>
+                        </a>
+                        <a href="#contact" class="btn btn-primary">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero" style="background-image: url('assets/images/interior.webp');">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-hero-text">
+                    <span class="hero-badge">Utah & Arizona's Trusted Construction Experts</span>
+                    <h1>TRANSFORM YOUR <span class="highlight">BASEMENT</span></h1>
+                    <p>Turn your unfinished basement into beautiful, functional living space. From home theaters to guest suites, we bring your vision to life with quality craftsmanship.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                        <a href="tel:801-923-4634" class="btn btn-secondary">Call Now</a>
+                        <a href="portfolio.html" class="btn btn-outline">View Portfolio</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="number">50+</div>
+                            <div class="label">Years Experience</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">500+</div>
+                            <div class="label">Projects Completed</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">24HR</div>
+                            <div class="label">Response Time</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">4.9</div>
+                            <div class="label">Google Rating</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-form" id="contact">
+                    <h3>Get Your Free Estimate</h3>
+                    <p class="form-subtitle">No obligation. Response within 24 hours.</p>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastname" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select name="service" required>
+                                <option value="">Project Type</option>
+                                <option value="full-finish">Full Basement Finish</option>
+                                <option value="partial">Partial Finish</option>
+                                <option value="bathroom">Basement Bathroom</option>
+                                <option value="bedroom">Basement Bedroom</option>
+                                <option value="theater">Home Theater</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Request Free Estimate</button>
+                        <p class="form-disclaimer">I understand & consent to receive calls/text from Relentless – No Obligation</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="reviews-content">
+                <div class="reviews-text">
+                    <h2>RELENTLESS CONSTRUCTION<br>CUSTOMER REVIEWS</h2>
+                </div>
+                <div class="reviews-badges">
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">4.9/5</div>
+                            <div class="source">Google Reviews</div>
+                        </div>
+                    </div>
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fab fa-yelp"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">4.8/5</div>
+                            <div class="source">Yelp Reviews</div>
+                        </div>
+                    </div>
+                    <div class="review-badge">
+                        <div class="review-badge-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="review-badge-text">
+                            <div class="rating">5.0/5</div>
+                            <div class="source">HomeAdvisor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Basement Finishing Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Build Section -->
+    <section class="what-we-build-section" style="padding-top: 140px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2>WHAT WE BUILD</h2>
+                <p>From simple bedroom additions to complete basement transformations, we handle every aspect of your project.</p>
+            </div>
+            <div class="build-grid">
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Living Spaces</h3>
+                    <p>Family rooms, rec rooms, and entertainment spaces designed for comfort and functionality.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Bedrooms</h3>
+                    <p>Code-compliant basement bedrooms with proper egress windows, lighting, and climate control.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>Bathrooms</h3>
+                    <p>Full or half bathrooms including plumbing rough-in, fixtures, and finishing.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Home Theaters</h3>
+                    <p>Custom theater rooms with soundproofing, wiring, tiered seating, and premium finishes.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Home Offices</h3>
+                    <p>Professional workspaces with built-ins, proper lighting, and sound isolation.</p>
+                </div>
+                <div class="build-card">
+                    <div class="build-card-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Wet Bars</h3>
+                    <p>Custom bar areas with cabinetry, countertops, sinks, and refrigeration options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Section -->
+    <section class="roi-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>YOUR BASEMENT'S HIDDEN VALUE</h2>
+            </div>
+            <div class="roi-grid">
+                <div class="roi-card">
+                    <h4>Average ROI</h4>
+                    <div class="stat">70-75%</div>
+                    <p>Return on investment for basement finishing</p>
+                </div>
+                <div class="roi-card">
+                    <h4>Livable Space</h4>
+                    <div class="stat">50-100%</div>
+                    <p>Increase in usable square footage</p>
+                </div>
+                <div class="roi-card">
+                    <h4>Home Value</h4>
+                    <div class="stat">$20-50</div>
+                    <p>Per sq ft added to home value</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Built For Living Section -->
+    <section class="built-for-section">
+        <div class="container">
+            <div class="built-for-content">
+                <div class="built-for-text">
+                    <span class="section-badge">Why Us</span>
+                    <h2>BUILT FOR <span class="highlight">LIVING</span></h2>
+                    <p>A finished basement isn't just about adding square footage — it's about creating space for life's best moments. Whether it's movie nights with the family, a quiet home office, or a place for guests to stay, we build basements that enhance how you live.</p>
+                    <p>Our team handles everything from permits and inspections to final trim work. We coordinate all trades, keep you informed throughout, and deliver on our promises.</p>
+                    <div class="built-for-features">
+                        <div class="built-for-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Fully Licensed</span>
+                        </div>
+                        <div class="built-for-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Fully Insured</span>
+                        </div>
+                        <div class="built-for-feature">
+                            <i class="fas fa-check"></i>
+                            <span>5-Star Rated</span>
+                        </div>
+                        <div class="built-for-feature">
+                            <i class="fas fa-check"></i>
+                            <span>Same Day Quotes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="redefining-icons">
+                    <div class="icon-card">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Fully Licensed</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Fully Insured</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-star"></i>
+                        <span>5-Star Rated</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-bolt"></i>
+                        <span>Same-Day Quotes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>FROM DESIGN TO COMPLETION</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Design & Planning</h3>
+                    <p>We assess your space, discuss your needs, and create a detailed floor plan and design.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Permits & Approval</h3>
+                    <p>We handle all permits and ensure your project meets local building codes.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Construction</h3>
+                    <p>Framing, electrical, plumbing, HVAC, insulation, drywall, and trim — all coordinated seamlessly.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Final Inspection</h3>
+                    <p>Final walkthrough, inspection, and handoff of your new living space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="areas-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Service Areas</span>
+                <h2>PROUDLY SERVING UTAH & ARIZONA</h2>
+            </div>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> ARIZONA</h3>
+                    <p class="area-subtitle">Phoenix Metro, Scottsdale, and Surrounding Areas</p>
+                    <ul>
+                        <li>Phoenix</li>
+                        <li>Scottsdale</li>
+                        <li>Mesa</li>
+                        <li>Tempe</li>
+                        <li>Gilbert</li>
+                        <li>Chandler</li>
+                        <li>Glendale</li>
+                        <li>Peoria</li>
+                        <li>Surprise</li>
+                        <li>Goodyear</li>
+                        <li>Buckeye</li>
+                        <li>Avondale</li>
+                    </ul>
+                </div>
+                <div class="area-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> UTAH</h3>
+                    <p class="area-subtitle">Salt Lake City, Utah County, and Surrounding Areas</p>
+                    <ul>
+                        <li>Salt Lake City</li>
+                        <li>Provo</li>
+                        <li>Ogden</li>
+                        <li>Sandy</li>
+                        <li>West Valley City</li>
+                        <li>Orem</li>
+                        <li>West Jordan</li>
+                        <li>Layton</li>
+                        <li>South Jordan</li>
+                        <li>Lehi</li>
+                        <li>Draper</li>
+                        <li>St. George</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>WHAT OUR CLIENTS SAY</h2>
+            </div>
+            <div class="google-reviews-widget">
+                <div class="google-reviews-header">
+                    <div class="google-logo">
+                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style="height: 25px;">
+                        <span style="color: #333; font-weight: 600;">Excellent</span>
+                        <span class="stars" style="color: #ffc107;">★★★★★</span>
+                        <span style="color: #666;">5.0 · 32 reviews</span>
+                    </div>
+                    <a href="#" class="write-review-btn">Write a review</a>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=Ann+Fader&background=135941&color=fff" alt="Ann Fader" class="review-avatar">
+                            <div class="review-author">
+                                <h4>Ann Fader</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>I trust efficient services needed. So easy to do business with!!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=David+Urso&background=135941&color=fff" alt="David Urso" class="review-avatar">
+                            <div class="review-author">
+                                <h4>David Urso</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>Relentless Construction did an excellent job replacing our windows. Teigue and his associates went out of their way to ensure I was informed every step of th...</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=Donna+Bradley&background=135941&color=fff" alt="Donna Bradley" class="review-avatar">
+                            <div class="review-author">
+                                <h4>Donna Bradley</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>Installation went very well. Two man crew were personable and cleaned up everything...</p>
+                    </div>
+                </div>
+                <div class="verified-badge">
+                    <a href="#">Verified by TrustIndex <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2>BASEMENT FINISHING FAQS</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does basement finishing take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most basement finishing projects take 4-8 weeks depending on size and complexity. We'll provide a detailed timeline during your consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need permits for basement finishing?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, most municipalities require permits for basement finishing. We handle all permits and inspections as part of our service.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is an egress window?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Egress windows are required in basement bedrooms for emergency exit. They must meet specific size requirements set by building codes. We can install them as part of your project.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What about moisture and waterproofing?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We assess your basement for moisture issues before starting. If needed, we can recommend waterproofing solutions to ensure your finished space stays dry.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How much does basement finishing cost?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Costs vary based on square footage, finishes, and scope. We provide detailed, transparent estimates so you know exactly what to expect.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Finish Your Basement?</h2>
+                <p>Get your free design consultation today.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Get Free Estimate</a>
+                    <a href="tel:801-923-4634" class="btn btn-secondary btn-large">Call (801) 923-4634</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Call Us</h4>
+                    <a href="tel:801-923-4634">801-923-4634</a>
+                </div>
+                <div class="footer-info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Hours</h4>
+                    <p>Monday-Friday: 8AM - 6PM<br>Saturday: By Appointment</p>
+                </div>
+                <div class="footer-info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Service Areas</h4>
+                    <p>Utah & Arizona<br>Multiple Locations</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Relentless Construction. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

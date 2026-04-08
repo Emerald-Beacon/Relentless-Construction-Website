@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Relentless Construction</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Host+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="Relentless Construction">
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="areas.html">Service Areas</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:801-923-4634" class="header-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>801-923-4634</span>
+                </a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch for a free estimate</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Talk About Your Project</h2>
+                    <p>Ready to start your home improvement project? We're here to help. Contact us today for a free, no-obligation estimate. Our team responds to all inquiries within 24 hours.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Call Us</h3>
+                                <a href="tel:801-923-4634">801-923-4634</a>
+                                <p>Mon-Sat: 7am - 7pm</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email Us</h3>
+                                <a href="mailto:info@relentlessconstruction.io">info@relentlessconstruction.io</a>
+                                <p>We respond within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Service Areas</h3>
+                                <p>Utah & Arizona</p>
+                                <a href="areas.html">View all locations</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-box">
+                        <h3>Request a Free Estimate</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Property Address</label>
+                                <input type="text" id="address" name="address" placeholder="Street address, City, State, ZIP">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Service Needed *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="roofing">Roofing</option>
+                                    <option value="windows">Windows</option>
+                                    <option value="siding">Siding</option>
+                                    <option value="gutters">Gutters</option>
+                                    <option value="multiple">Multiple Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="hearAbout">How did you hear about us?</label>
+                                <select id="hearAbout" name="hearAbout">
+                                    <option value="">Select...</option>
+                                    <option value="google">Google Search</option>
+                                    <option value="referral">Friend/Family Referral</option>
+                                    <option value="social">Social Media</option>
+                                    <option value="yelp">Yelp</option>
+                                    <option value="homeadvisor">HomeAdvisor</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full btn-large">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Contact Us -->
+    <section class="why-contact">
+        <div class="container">
+            <h2>What to Expect</h2>
+            <div class="expect-grid">
+                <div class="expect-item">
+                    <div class="expect-number">1</div>
+                    <h3>Quick Response</h3>
+                    <p>We'll contact you within 24 hours to discuss your project and schedule an inspection.</p>
+                </div>
+                <div class="expect-item">
+                    <div class="expect-number">2</div>
+                    <h3>Free Inspection</h3>
+                    <p>Our expert will assess your property and discuss your options in detail.</p>
+                </div>
+                <div class="expect-item">
+                    <div class="expect-number">3</div>
+                    <h3>Detailed Estimate</h3>
+                    <p>Receive a comprehensive, no-obligation quote with transparent pricing.</p>
+                </div>
+                <div class="expect-item">
+                    <div class="expect-number">4</div>
+                    <h3>Your Decision</h3>
+                    <p>Take your time to review. No pressure, no obligation. We're here when you're ready.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Preview -->
+    <section class="contact-faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How soon can you start my project?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Project timelines vary based on the scope of work and current schedule. After your free inspection, we'll provide a detailed timeline. Most projects can begin within 1-2 weeks of approval.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer financing options?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer flexible financing options to make your home improvement project more affordable. Ask about our current financing programs during your consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you work with insurance claims?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We have extensive experience working with insurance companies on storm damage and other covered repairs. We can help guide you through the claims process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What warranties do you offer?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive warranties on both materials and labor. Specific warranty terms vary by project and manufacturer. We'll provide detailed warranty information with your estimate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/images/logo.png" alt="Relentless Construction" class="footer-logo">
+                    <p>Quality construction services for residential and commercial properties in Utah and Arizona.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="roofing.html">Roofing</a></li>
+                        <li><a href="windows.html">Windows</a></li>
+                        <li><a href="siding.html">Siding</a></li>
+                        <li><a href="gutters.html">Gutters</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="areas.html">Service Areas</a></li>
+                        <li><a href="index.html#testimonials">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:801-923-4634">801-923-4634</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@relentlessconstruction.io">info@relentlessconstruction.io</a></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Relentless Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

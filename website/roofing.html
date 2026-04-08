@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Services - Relentless Construction | Utah & Arizona</title>
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Host+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div class="top-bar-left">
+                        <a href="tel:801-923-4634"><i class="fas fa-phone"></i> 801-923-4634</a>
+                        <a href="mailto:info@relentlessconstruction.io"><i class="fas fa-envelope"></i> info@relentlessconstruction.io</a>
+                        <span><i class="fas fa-clock"></i> Mon-Sat 8AM-6PM</span>
+                    </div>
+                    <div class="top-bar-right">
+                        <span>Follow Us:</span>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/full-logo.png" alt="Relentless Construction">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li class="dropdown">
+                                <a href="services.html">Services <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 5px;"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="windows.html">Window Installation</a></li>
+                                    <li><a href="roofing.html">Roofing</a></li>
+                                    <li><a href="basement.html">Basement Finishing</a></li>
+                                    <li><a href="hardscapes.html">Hardscapes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-cta">
+                        <a href="tel:801-923-4634" class="header-phone">
+                            <i class="fas fa-phone"></i>
+                            <span>Ready, Contact Now</span>
+                        </a>
+                        <a href="#contact" class="btn btn-primary">Free Estimate</a>
+                    </div>
+                    <button class="mobile-menu-btn" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero" style="background-image: url('assets/images/service-roof.webp');">
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-hero-text">
+                    <span class="hero-badge">Trusted Roofing Experts - Utah & Arizona</span>
+                    <h1>PROTECT YOUR HOME <span class="highlight">RELENTLESSLY</span></h1>
+                    <p>From storm damage repairs to complete roof replacements, we deliver uncompromising quality and craftsmanship. Licensed, insured, and committed to excellence in every project.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                        <a href="tel:801-923-4634" class="btn btn-secondary">Call (801) 923-4634</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="number">500+</div>
+                            <div class="label">Roofs Completed</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">30+</div>
+                            <div class="label">Years Experience</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="number">4.9</div>
+                            <div class="label">Google Rating</div>
+                        </div>
+                    </div>
+                    <!-- Thumbnail Gallery -->
+                    <div class="hero-gallery">
+                        <img src="assets/images/gallery-1.webp" alt="Roofing project 1" class="active">
+                        <img src="assets/images/gallery-2.jpg" alt="Roofing project 2">
+                        <img src="assets/images/gallery-3.webp" alt="Roofing project 3">
+                        <img src="assets/images/gallery-4.webp" alt="Roofing project 4">
+                        <img src="assets/images/gallery-5.webp" alt="Roofing project 5">
+                    </div>
+                </div>
+                <div class="hero-form" id="contact">
+                    <h3>Get Your Free Estimate</h3>
+                    <p class="form-subtitle">No obligation. Response within 24 hours.</p>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="firstname" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="lastname" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="address" placeholder="Street Address">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="zip" placeholder="Zip Code">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Request Free Estimate</button>
+                        <p class="form-disclaimer">I understand & consent to receive calls/text from Relentless – No Obligation</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Roofing Solutions -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2>COMPREHENSIVE ROOFING SOLUTIONS</h2>
+            </div>
+            <div class="roofing-solutions-grid">
+                <div class="roofing-card">
+                    <div class="roofing-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Roof Repair</h3>
+                    <p>Fast, reliable repairs for leaks, storm damage, and general wear. We fix problems right the first time to maximize the longevity of your roof.</p>
+                </div>
+                <div class="roofing-card">
+                    <div class="roofing-card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Roof Replacement</h3>
+                    <p>Complete roof replacements with professional installation and a range of materials. We handle tear-off, deck repair, and finish installation.</p>
+                </div>
+                <div class="roofing-card">
+                    <div class="roofing-card-icon">
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                    </div>
+                    <h3>Storm Damage</h3>
+                    <p>24/7 emergency response for storm damage. We work directly with insurance companies to streamline claims and get your roof restored quickly.</p>
+                </div>
+                <div class="roofing-card">
+                    <div class="roofing-card-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3>Tile Roofing</h3>
+                    <p>Specialized in premium popular tile roofing, natural beauty and low impact. Beautiful aesthetics that match your home.</p>
+                </div>
+                <div class="roofing-card">
+                    <div class="roofing-card-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Metal Roofing</h3>
+                    <p>Durable, energy-efficient metal roofing solutions for homes. Standing seam and metal shingle options to match your style.</p>
+                </div>
+                <div class="roofing-card">
+                    <div class="roofing-card-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Roof Inspection</h3>
+                    <p>Thorough inspections to identify potential issues before they become costly problems. Complete reports with detailed recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Relentless Difference -->
+    <section class="difference-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Us</span>
+                <h2>THE RELENTLESS DIFFERENCE</h2>
+            </div>
+            <div class="difference-content">
+                <div class="difference-list">
+                    <div class="difference-item">
+                        <div class="difference-number">01</div>
+                        <div>
+                            <h4>Two-State Expertise</h4>
+                            <p>Serving both Utah and Arizona means we understand the unique roofing challenges of each climate. From desert heat to mountain snow, our experienced crews know how to protect your home.</p>
+                        </div>
+                    </div>
+                    <div class="difference-item">
+                        <div class="difference-number">02</div>
+                        <div>
+                            <h4>Transparent Pricing</h4>
+                            <p>No hidden fees, no surprises. We provide detailed, written estimates that clearly explain the work to be done and the associated costs – no haggling.</p>
+                        </div>
+                    </div>
+                    <div class="difference-item">
+                        <div class="difference-number">03</div>
+                        <div>
+                            <h4>Insurance Specialists</h4>
+                            <p>We navigate the insurance claims process for you, documenting damage and advocating on your behalf.</p>
+                        </div>
+                    </div>
+                    <div class="difference-item">
+                        <div class="difference-number">04</div>
+                        <div>
+                            <h4>Warranty Protection</h4>
+                            <p>Industry-leading warranties on materials and workmanship give you peace of mind for years to come.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="redefining-icons">
+                    <div class="icon-card">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Fully Licensed</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Fully Insured</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-star"></i>
+                        <span>5-Star Rated</span>
+                    </div>
+                    <div class="icon-card">
+                        <i class="fas fa-bolt"></i>
+                        <span>Same-Day Quotes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>FROM INSPECTION TO COMPLETION</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Free Inspection</h3>
+                    <p>Thorough assessment of your roof's condition with detailed documentation and photos.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Custom Proposal</h3>
+                    <p>Transparent, itemized quote with material options and project timeline - no hidden fees.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Expert Installation</h3>
+                    <p>Professional crew handles everything, keeping your property clean and protected.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Final Walkthrough</h3>
+                    <p>Quality inspection and warranty documentation to ensure your complete satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="areas-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Service Areas</span>
+                <h2>PROUDLY SERVING UTAH & ARIZONA</h2>
+            </div>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> ARIZONA</h3>
+                    <p class="area-subtitle">Phoenix Metro, Scottsdale, and Surrounding Areas</p>
+                    <ul>
+                        <li>Phoenix</li>
+                        <li>Scottsdale</li>
+                        <li>Mesa</li>
+                        <li>Tempe</li>
+                        <li>Gilbert</li>
+                        <li>Chandler</li>
+                        <li>Glendale</li>
+                        <li>Peoria</li>
+                        <li>Surprise</li>
+                        <li>Goodyear</li>
+                        <li>Buckeye</li>
+                        <li>Avondale</li>
+                    </ul>
+                </div>
+                <div class="area-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> UTAH</h3>
+                    <p class="area-subtitle">Salt Lake City, Utah County, and Surrounding Areas</p>
+                    <ul>
+                        <li>Salt Lake City</li>
+                        <li>Provo</li>
+                        <li>Ogden</li>
+                        <li>Sandy</li>
+                        <li>West Valley City</li>
+                        <li>Orem</li>
+                        <li>West Jordan</li>
+                        <li>Layton</li>
+                        <li>South Jordan</li>
+                        <li>Lehi</li>
+                        <li>Draper</li>
+                        <li>St. George</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2>WHAT OUR CLIENTS SAY</h2>
+            </div>
+            <div class="google-reviews-widget">
+                <div class="google-reviews-header">
+                    <div class="google-logo">
+                        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" style="height: 25px;">
+                        <span style="color: #333; font-weight: 600;">Excellent</span>
+                        <span class="stars" style="color: #ffc107;">★★★★★</span>
+                        <span style="color: #666;">5.0 · 32 reviews</span>
+                    </div>
+                    <a href="#" class="write-review-btn">Write a review</a>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=Ann+Fader&background=135941&color=fff" alt="Ann Fader" class="review-avatar">
+                            <div class="review-author">
+                                <h4>Ann Fader</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>I trust efficient services needed. So easy to do business with!!</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=David+Urso&background=135941&color=fff" alt="David Urso" class="review-avatar">
+                            <div class="review-author">
+                                <h4>David Urso</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>Relentless Construction did an excellent job replacing our windows. Teigue and his associates went out of their way to ensure I was informed every step of th...</p>
+                    </div>
+                    <div class="review-card">
+                        <div class="review-header">
+                            <img src="https://ui-avatars.com/api/?name=Donna+Bradley&background=135941&color=fff" alt="Donna Bradley" class="review-avatar">
+                            <div class="review-author">
+                                <h4>Donna Bradley</h4>
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p>Installation went very well. Two man crew were personable and cleaned up everything...</p>
+                    </div>
+                </div>
+                <div class="verified-badge">
+                    <a href="#">Verified by TrustIndex <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2>ROOFING FAQS</h2>
+                <p>Considering a new roofing contract, the most important decision you can make is to consult the top of your home or property. Whether you're facing repairs or a total replacement, the most common question our clients ask is about our process.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does a typical roof last?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most asphalt shingle roofs last 20-30 years, while metal and tile roofs can last 50+ years with proper maintenance. The lifespan depends on materials, climate, and maintenance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What roofing materials do you work with?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We install all major roofing types including asphalt shingles, metal roofing, tile, flat roof systems, and more. We'll recommend the best option for your home and budget.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How long does a roof replacement take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most residential roof replacements can be completed in 1-3 days, depending on roof size and complexity. We'll provide a specific timeline during your estimate.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Will my homeowner's insurance cover roof replacement?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Insurance typically covers roof damage from storms, hail, and other covered events. We help document damage and work directly with your insurance company.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you install a new roof over the existing shingles?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While overlay is possible in some cases, we generally recommend full tear-off to inspect and repair the deck, ensuring the longest-lasting installation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is roof flashing, and why does it matter?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Flashing is metal strips that seal joints and transitions on your roof. Proper flashing is critical to prevent leaks around chimneys, vents, and skylights.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I choose the best roofing contractor?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Look for licensed, insured contractors with strong reviews, manufacturer certifications, and clear warranty terms. We check all these boxes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need to be home during the roof replacement?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No, you don't need to be home. We'll communicate throughout the project and perform a final walkthrough when you're available.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What should I do to prepare for a roof replacement?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Move vehicles away from the house, secure loose items in your attic, and trim overhanging branches. We'll provide a complete prep checklist before your project.</p>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: var(--text-muted);">Have more questions? Contact Relentless Construction for a free, no-obligation estimate.</p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Protect Your Home?</h2>
+                <p>Get your free, no-obligation roof inspection today.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">Get Free Estimate</a>
+                    <a href="tel:801-923-4634" class="btn btn-secondary btn-large">Call (801) 923-4634</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info-card">
+                    <i class="fas fa-phone"></i>
+                    <h4>Call Us</h4>
+                    <a href="tel:801-923-4634">801-923-4634</a>
+                </div>
+                <div class="footer-info-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Hours</h4>
+                    <p>Monday-Friday: 8AM - 6PM<br>Saturday: By Appointment</p>
+                </div>
+                <div class="footer-info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Service Areas</h4>
+                    <p>Utah & Arizona<br>Multiple Locations</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Relentless Construction. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
