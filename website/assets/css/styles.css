@@ -1353,10 +1353,18 @@ ul {
     border: 1px solid var(--border-dark);
     clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
     transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
 }
 
 .service-built-card:hover {
     border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+a.service-built-card h3,
+a.service-built-card p {
+    color: inherit;
 }
 
 .service-built-icon {
