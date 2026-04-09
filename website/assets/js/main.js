@@ -7,9 +7,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const nav = document.querySelector('.nav');
 
     if (mobileMenuBtn) {
+        // Create mobile CTA buttons (shown inside mobile menu)
+        const mobileCta = document.createElement('div');
+        mobileCta.className = 'mobile-nav-cta';
+        mobileCta.innerHTML = `
+            <a href="tel:801-923-4634" class="btn btn-secondary" style="width:100%;margin-bottom:10px;">
+                <i class="fas fa-phone"></i> Call 801-923-4634
+            </a>
+            <button class="btn btn-primary" style="width:100%;" onclick="openFormPopup(); document.querySelector('.mobile-menu-btn').click();">
+                Free Estimate
+            </button>
+        `;
+        nav.appendChild(mobileCta);
+
         mobileMenuBtn.addEventListener('click', function() {
             this.classList.toggle('active');
             nav.classList.toggle('active');
+            // Prevent body scroll when menu is open
+            if (nav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
         });
     }
 
@@ -19,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', () => {
             mobileMenuBtn.classList.remove('active');
             nav.classList.remove('active');
+            document.body.style.overflow = '';
         });
     });
 
