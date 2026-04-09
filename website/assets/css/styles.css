@@ -2301,6 +2301,11 @@ ul {
 
     .nav {
         display: none;
+    }
+
+    /* Mobile menu when active - appended to body via JS */
+    .nav.active {
+        display: flex;
         position: fixed;
         top: 60px;
         left: 0;
@@ -2309,36 +2314,31 @@ ul {
         background-color: #0d0d0d;
         flex-direction: column;
         padding: 20px;
-        z-index: 9999;
+        z-index: 99999;
         overflow-y: auto;
     }
 
-    /* Mobile menu when active */
-    .nav.active {
-        display: flex;
-    }
-
-    .nav .nav-list {
+    .nav.active .nav-list {
         display: flex;
         flex-direction: column;
         gap: 0;
         width: 100%;
     }
 
-    .nav .nav-list > li {
+    .nav.active .nav-list > li {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
         list-style: none;
     }
 
-    .nav .nav-list > li > a {
+    .nav.active .nav-list > li > a {
         display: block;
         padding: 18px 0;
         font-size: 18px;
         color: #fff;
     }
 
-    .nav .nav-list .dropdown-menu {
+    .nav.active .nav-list .dropdown-menu {
         position: static;
         opacity: 1;
         visibility: visible;
@@ -2351,11 +2351,11 @@ ul {
         display: block;
     }
 
-    .nav .nav-list .dropdown-menu li {
+    .nav.active .nav-list .dropdown-menu li {
         border-bottom: none;
     }
 
-    .nav .nav-list .dropdown-menu a {
+    .nav.active .nav-list .dropdown-menu a {
         padding: 12px 0;
         font-size: 16px;
         color: rgba(255, 255, 255, 0.7);

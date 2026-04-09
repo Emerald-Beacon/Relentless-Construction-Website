@@ -5,8 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const nav = document.querySelector('.nav');
+    const header = document.querySelector('.header');
 
-    if (mobileMenuBtn) {
+    if (mobileMenuBtn && nav) {
         // Create mobile CTA buttons (shown inside mobile menu)
         const mobileCta = document.createElement('div');
         mobileCta.className = 'mobile-nav-cta';
@@ -26,8 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
             // Prevent body scroll when menu is open
             if (nav.classList.contains('active')) {
                 document.body.classList.add('menu-open');
+                // Move nav to body for proper z-index stacking
+                document.body.appendChild(nav);
             } else {
                 document.body.classList.remove('menu-open');
+                // Move nav back to header
+                if (header) {
+                    const headerContent = header.querySelector('.header-content');
+                    const headerCta = header.querySelector('.header-cta');
+                    if (headerContent && headerCta) {
+                        headerContent.insertBefore(nav, headerCta);
+                    }
+                }
             }
         });
     }
