@@ -5,9 +5,9 @@
 
 /* CSS Variables */
 :root {
-    --primary-color: #17a267;
-    --primary-light: #1fc07a;
-    --primary-dark: #135941;
+    --primary-color: #2d8a5e;
+    --primary-light: #359e6d;
+    --primary-dark: #1e6b45;
     --dark-bg: #1a1a1a;
     --dark-bg-secondary: #242424;
     --dark-bg-card: #1e1e1e;
@@ -265,7 +265,7 @@ ul {
 }
 
 .nav-list .dropdown-menu a:hover {
-    background-color: rgba(23, 162, 103, 0.2);
+    background-color: rgba(45, 138, 94, 0.2);
 }
 
 .header-cta {
@@ -342,7 +342,7 @@ ul {
 
 .hero-badge {
     display: inline-block;
-    background-color: rgba(23, 162, 103, 0.3);
+    background-color: rgba(45, 138, 94, 0.3);
     border: 1px solid var(--primary-color);
     padding: 8px 16px;
     border-radius: 0;
@@ -580,7 +580,7 @@ ul {
 
 .section-badge {
     display: inline-block;
-    background-color: rgba(23, 162, 103, 0.2);
+    background-color: rgba(45, 138, 94, 0.2);
     border: 1px solid var(--primary-color);
     padding: 6px 16px;
     border-radius: 0;
@@ -1423,7 +1423,7 @@ ul {
     width: 80px;
     height: 80px;
     margin: 0 auto 25px;
-    background-color: rgba(23, 162, 103, 0.2);
+    background-color: rgba(45, 138, 94, 0.2);
     border: 2px solid var(--primary-color);
     border-radius: 0;
     display: flex;
@@ -1698,7 +1698,7 @@ ul {
 .build-card-icon {
     width: 60px;
     height: 60px;
-    background-color: rgba(23, 162, 103, 0.2);
+    background-color: rgba(45, 138, 94, 0.2);
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -1863,7 +1863,7 @@ ul {
     width: 80px;
     height: 80px;
     margin: 0 auto 20px;
-    background-color: rgba(23, 162, 103, 0.15);
+    background-color: rgba(45, 138, 94, 0.15);
     border-radius: 0;
     display: flex;
     align-items: center;
@@ -2901,7 +2901,7 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background-color: rgba(23, 162, 103, 0.3);
+    background-color: rgba(45, 138, 94, 0.3);
     border: 1px solid var(--primary-color);
     padding: 12px 24px;
     margin-bottom: 30px;
@@ -3232,7 +3232,7 @@ ul {
 }
 
 .filter-btn:hover {
-    background: rgba(23, 162, 103, 0.2);
+    background: rgba(45, 138, 94, 0.2);
     border-color: var(--primary-color);
     color: var(--white);
 }
