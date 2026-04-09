@@ -2,21 +2,55 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## CRITICAL: Deployment Configuration
+## ⛔ CRITICAL: DEPLOYMENT GUARDRAILS ⛔
 
-**NEVER deploy or commit to any other location than the following:**
+### AUTHORIZED TARGETS ONLY - NO EXCEPTIONS
 
-- **GitHub Repository**: `https://github.com/Emerald-Beacon/Relentless-Construction-Website.git`
-- **Netlify Project**: `relentless-construction-website` (Site ID: `5761d556-2e2d-409d-a0e2-dac63d2348a2`)
-- **Production URL**: `https://relentlessconstruction.io`
+| Type | Authorized Value | NEVER use anything else |
+|------|------------------|------------------------|
+| **GitHub Repo** | `Emerald-Beacon/Relentless-Construction-Website` | ❌ No other repos |
+| **Netlify Project** | `relentless-construction-website` | ❌ No other projects |
+| **Netlify Site ID** | `5761d556-2e2d-409d-a0e2-dac63d2348a2` | ❌ No other site IDs |
+| **Production URL** | `https://relentlessconstruction.io` | ❌ No other URLs |
 
-Before ANY deployment, ALWAYS verify:
-1. Run `git remote -v` - must show `Emerald-Beacon/Relentless-Construction-Website`
-2. Run `netlify status` - must show `relentless-construction-website` and `relentlessconstruction.io`
+### MANDATORY VERIFICATION BEFORE EVERY COMMIT/DEPLOY
 
-If either check fails, DO NOT proceed. Re-link with:
+**STOP. Before running `git push` or `netlify deploy`, you MUST run these checks:**
+
+```bash
+# Check 1: Verify GitHub remote
+git remote -v
+# MUST show: origin https://github.com/Emerald-Beacon/Relentless-Construction-Website.git
+
+# Check 2: Verify Netlify project
+netlify status
+# MUST show: relentless-construction-website and relentlessconstruction.io
+```
+
+**If EITHER check fails, DO NOT PROCEED. Fix with:**
 ```bash
 git remote set-url origin https://github.com/Emerald-Beacon/Relentless-Construction-Website.git
+netlify link --name relentless-construction-website
+```
+
+### SAFEST DEPLOYMENT METHOD
+
+Use the deploy script which has built-in verification:
+```bash
+./deploy.sh
+```
+
+### PROTECTION LAYERS
+
+1. **Git pre-push hook** (`.git/hooks/pre-push`) - Blocks pushes to wrong repos
+2. **Deploy script** (`deploy.sh`) - Verifies all targets before deploying
+3. **This CLAUDE.md** - Instructions for Claude Code
+
+### IF NETLIFY LINKS TO WRONG PROJECT
+
+This has happened before. If `netlify status` shows ANY other project:
+```bash
+netlify unlink
 netlify link --name relentless-construction-website
 ```
 

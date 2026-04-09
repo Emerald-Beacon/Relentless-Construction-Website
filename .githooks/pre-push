@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# =============================================================================
+# GUARDRAIL: Pre-push hook for Relentless Construction Website
+# This hook prevents pushing to any repository other than the authorized one.
+#
+# INSTALL: cp .githooks/pre-push .git/hooks/pre-push && chmod +x .git/hooks/pre-push
+# =============================================================================
+
+AUTHORIZED_REPO="Emerald-Beacon/Relentless-Construction-Website"
+AUTHORIZED_URL="https://github.com/Emerald-Beacon/Relentless-Construction-Website.git"
+
+# Get the remote URL being pushed to
+remote="$1"
+url="$2"
+
+# If URL not provided as argument, get it from remote name
+if [ -z "$url" ]; then
+    url=$(git remote get-url "$remote" 2>/dev/null)
+fi
+
+# Check if the URL matches the authorized repository
+if [[ "$url" != *"$AUTHORIZED_REPO"* ]]; then
+    echo ""
+    echo "============================================================"
+    echo "  ❌ PUSH BLOCKED - WRONG REPOSITORY"
+    echo "============================================================"
+    echo ""
+    echo "  You are trying to push to:"
+    echo "  $url"
+    echo ""
+    echo "  This repository can ONLY push to:"
+    echo "  $AUTHORIZED_URL"
+    echo ""
+    echo "  To fix, run:"
+    echo "  git remote set-url origin $AUTHORIZED_URL"
+    echo ""
+    echo "============================================================"
+    echo ""
+    exit 1
+fi
+
+echo "✓ Push authorized to $AUTHORIZED_REPO"
+exit 0
