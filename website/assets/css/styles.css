@@ -3710,6 +3710,28 @@ body.menu-open {
     transform: scale(1.05);
 }
 
+.blog-card-image.logo-placeholder {
+    background-color: var(--dark-bg-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.blog-card-image.logo-placeholder img {
+    width: auto;
+    height: auto;
+    max-width: 160px;
+    max-height: 80px;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+.blog-card:hover .blog-card-image.logo-placeholder img {
+    transform: none;
+    opacity: 0.9;
+}
+
 .blog-category-badge {
     display: inline-block;
     background-color: var(--primary-color);
