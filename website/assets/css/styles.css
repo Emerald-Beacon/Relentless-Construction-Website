@@ -3678,6 +3678,10 @@ body.menu-open {
     gap: 28px;
 }
 
+.blog-posts-grid.three-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .blog-card {
     background-color: var(--dark-bg-secondary);
     border: 1px solid var(--border-dark);
@@ -4244,6 +4248,10 @@ body.menu-open {
         grid-template-columns: 1fr;
     }
 
+    .blog-posts-grid.three-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .blog-sidebar {
         position: static;
         display: grid;
@@ -4276,7 +4284,8 @@ body.menu-open {
 }
 
 @media (max-width: 768px) {
-    .blog-posts-grid {
+    .blog-posts-grid,
+    .blog-posts-grid.three-col {
         grid-template-columns: 1fr;
     }
 
